@@ -261,6 +261,7 @@ angular
     only: '@csOnly'
     except: '@csExcept'
   template: '<select ng-options="country.name as country.name for country in countries">
+                <option value="">-Select-</option>
                 <option value="" ng-if="isSelectionOptional"></option>
              </select>'
   controller: ['$scope', '$attrs', ($scope, $attrs) ->
